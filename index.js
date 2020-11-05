@@ -11,6 +11,7 @@ const wsServer = new server({
 });
 let clients = [];
 
+
 wsServer.on('request', request => {
   const connection = request.accept();
   const id = Math.floor(Math.random() * 100);
