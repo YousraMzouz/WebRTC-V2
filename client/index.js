@@ -3,6 +3,7 @@
   
     let connection;
   
+    
     const enableAndDisableButtons = (connected) => {
       document.getElementById('start').disabled = connected;
       document.getElementById('say-hello').disabled = !connected;

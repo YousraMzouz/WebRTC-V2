@@ -14,6 +14,7 @@ let clients = [];
 wsServer.on('request', request => {
   const connection = request.accept();
   const id = Math.floor(Math.random() * 100);
+  
 
   clients.forEach(client => client.connection.send(JSON.stringify({
     client: id,
